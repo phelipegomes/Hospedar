@@ -37,25 +37,25 @@ namespace Hospedar.All_User_Control
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox3 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2ComboBox1 = new Guna.UI2.WinForms.Guna2ComboBox();
-            this.guna2DateTimePicker1 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2DateTimePicker2 = new Guna.UI2.WinForms.Guna2DateTimePicker();
-            this.guna2TextBox4 = new Guna.UI2.WinForms.Guna2TextBox();
-            this.guna2TextBox5 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNome = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtTelefone = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtNacionalidade = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtGenero = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtDtNascimento = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtCheckin = new Guna.UI2.WinForms.Guna2DateTimePicker();
+            this.txtPreco = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtCpf = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtCama = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.guna2ComboBox3 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtTipoQuarto = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.guna2ComboBox4 = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.txtNumeroQuarto = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.btnAddHospede = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2TextBox6 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtEndereco = new Guna.UI2.WinForms.Guna2TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -125,194 +125,198 @@ namespace Hospedar.All_User_Control
             this.label6.TabIndex = 7;
             this.label6.Text = "Data de Nascimento";
             // 
-            // guna2TextBox1
+            // txtNome
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.FocusedState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F);
-            this.guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.HoverState.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Location = new System.Drawing.Point(103, 180);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "Insira o Nome Completo";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.ShadowDecoration.Parent = this.guna2TextBox1;
-            this.guna2TextBox1.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox1.TabIndex = 8;
+            this.txtNome.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNome.DefaultText = "";
+            this.txtNome.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNome.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNome.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNome.DisabledState.Parent = this.txtNome;
+            this.txtNome.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNome.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNome.FocusedState.Parent = this.txtNome;
+            this.txtNome.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNome.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNome.HoverState.Parent = this.txtNome;
+            this.txtNome.Location = new System.Drawing.Point(103, 180);
+            this.txtNome.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.PasswordChar = '\0';
+            this.txtNome.PlaceholderText = "Insira o Nome Completo";
+            this.txtNome.SelectedText = "";
+            this.txtNome.ShadowDecoration.Parent = this.txtNome;
+            this.txtNome.Size = new System.Drawing.Size(309, 36);
+            this.txtNome.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtNome.TabIndex = 8;
             // 
-            // guna2TextBox2
+            // txtTelefone
             // 
-            this.guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox2.DefaultText = "";
-            this.guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.DisabledState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.FocusedState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox2.HoverState.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Location = new System.Drawing.Point(103, 282);
-            this.guna2TextBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox2.Name = "guna2TextBox2";
-            this.guna2TextBox2.PasswordChar = '\0';
-            this.guna2TextBox2.PlaceholderText = "Insira o Número de Telefone";
-            this.guna2TextBox2.SelectedText = "";
-            this.guna2TextBox2.ShadowDecoration.Parent = this.guna2TextBox2;
-            this.guna2TextBox2.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox2.TabIndex = 9;
+            this.txtTelefone.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtTelefone.DefaultText = "";
+            this.txtTelefone.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtTelefone.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtTelefone.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefone.DisabledState.Parent = this.txtTelefone;
+            this.txtTelefone.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtTelefone.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefone.FocusedState.Parent = this.txtTelefone;
+            this.txtTelefone.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtTelefone.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTelefone.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTelefone.HoverState.Parent = this.txtTelefone;
+            this.txtTelefone.Location = new System.Drawing.Point(103, 282);
+            this.txtTelefone.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtTelefone.Name = "txtTelefone";
+            this.txtTelefone.PasswordChar = '\0';
+            this.txtTelefone.PlaceholderText = "Insira o Número de Telefone";
+            this.txtTelefone.SelectedText = "";
+            this.txtTelefone.ShadowDecoration.Parent = this.txtTelefone;
+            this.txtTelefone.Size = new System.Drawing.Size(309, 36);
+            this.txtTelefone.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTelefone.TabIndex = 9;
             // 
-            // guna2TextBox3
+            // txtNacionalidade
             // 
-            this.guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox3.DefaultText = "";
-            this.guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.DisabledState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.FocusedState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox3.HoverState.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Location = new System.Drawing.Point(103, 384);
-            this.guna2TextBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox3.Name = "guna2TextBox3";
-            this.guna2TextBox3.PasswordChar = '\0';
-            this.guna2TextBox3.PlaceholderText = "Insira o País de Origem";
-            this.guna2TextBox3.SelectedText = "";
-            this.guna2TextBox3.ShadowDecoration.Parent = this.guna2TextBox3;
-            this.guna2TextBox3.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox3.TabIndex = 10;
+            this.txtNacionalidade.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtNacionalidade.DefaultText = "";
+            this.txtNacionalidade.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtNacionalidade.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtNacionalidade.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNacionalidade.DisabledState.Parent = this.txtNacionalidade;
+            this.txtNacionalidade.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtNacionalidade.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNacionalidade.FocusedState.Parent = this.txtNacionalidade;
+            this.txtNacionalidade.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtNacionalidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNacionalidade.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNacionalidade.HoverState.Parent = this.txtNacionalidade;
+            this.txtNacionalidade.Location = new System.Drawing.Point(103, 384);
+            this.txtNacionalidade.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtNacionalidade.Name = "txtNacionalidade";
+            this.txtNacionalidade.PasswordChar = '\0';
+            this.txtNacionalidade.PlaceholderText = "Insira o País de Origem";
+            this.txtNacionalidade.SelectedText = "";
+            this.txtNacionalidade.ShadowDecoration.Parent = this.txtNacionalidade;
+            this.txtNacionalidade.Size = new System.Drawing.Size(309, 36);
+            this.txtNacionalidade.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtNacionalidade.TabIndex = 10;
             // 
-            // guna2ComboBox1
+            // txtGenero
             // 
-            this.guna2ComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox1.FocusedState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2ComboBox1.HoverState.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.ItemHeight = 30;
-            this.guna2ComboBox1.ItemsAppearance.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Location = new System.Drawing.Point(103, 489);
-            this.guna2ComboBox1.Name = "guna2ComboBox1";
-            this.guna2ComboBox1.ShadowDecoration.Parent = this.guna2ComboBox1;
-            this.guna2ComboBox1.Size = new System.Drawing.Size(309, 36);
-            this.guna2ComboBox1.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2ComboBox1.TabIndex = 11;
+            this.txtGenero.BackColor = System.Drawing.Color.Transparent;
+            this.txtGenero.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtGenero.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtGenero.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGenero.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtGenero.FocusedState.Parent = this.txtGenero;
+            this.txtGenero.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtGenero.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtGenero.HoverState.Parent = this.txtGenero;
+            this.txtGenero.ItemHeight = 30;
+            this.txtGenero.Items.AddRange(new object[] {
+            "Homen",
+            "Mulher",
+            "Outro"});
+            this.txtGenero.ItemsAppearance.Parent = this.txtGenero;
+            this.txtGenero.Location = new System.Drawing.Point(103, 489);
+            this.txtGenero.Name = "txtGenero";
+            this.txtGenero.ShadowDecoration.Parent = this.txtGenero;
+            this.txtGenero.Size = new System.Drawing.Size(309, 36);
+            this.txtGenero.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtGenero.TabIndex = 11;
             // 
-            // guna2DateTimePicker1
+            // txtDtNascimento
             // 
-            this.guna2DateTimePicker1.CheckedState.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.guna2DateTimePicker1.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker1.CheckedState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.guna2DateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker1.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker1.HoverState.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Location = new System.Drawing.Point(103, 585);
-            this.guna2DateTimePicker1.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker1.Name = "guna2DateTimePicker1";
-            this.guna2DateTimePicker1.ShadowDecoration.Parent = this.guna2DateTimePicker1;
-            this.guna2DateTimePicker1.Size = new System.Drawing.Size(309, 36);
-            this.guna2DateTimePicker1.TabIndex = 13;
-            this.guna2DateTimePicker1.Value = new System.DateTime(2021, 11, 22, 13, 43, 22, 535);
+            this.txtDtNascimento.CheckedState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtDtNascimento.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.txtDtNascimento.CheckedState.Parent = this.txtDtNascimento;
+            this.txtDtNascimento.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.txtDtNascimento.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtDtNascimento.ForeColor = System.Drawing.Color.Black;
+            this.txtDtNascimento.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtDtNascimento.HoverState.Parent = this.txtDtNascimento;
+            this.txtDtNascimento.Location = new System.Drawing.Point(103, 585);
+            this.txtDtNascimento.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtDtNascimento.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtDtNascimento.Name = "txtDtNascimento";
+            this.txtDtNascimento.ShadowDecoration.Parent = this.txtDtNascimento;
+            this.txtDtNascimento.Size = new System.Drawing.Size(309, 36);
+            this.txtDtNascimento.TabIndex = 13;
+            this.txtDtNascimento.Value = new System.DateTime(2021, 11, 22, 13, 43, 22, 535);
             // 
-            // guna2DateTimePicker2
+            // txtCheckin
             // 
-            this.guna2DateTimePicker2.CheckedState.FillColor = System.Drawing.Color.DeepSkyBlue;
-            this.guna2DateTimePicker2.CheckedState.ForeColor = System.Drawing.Color.White;
-            this.guna2DateTimePicker2.CheckedState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.FillColor = System.Drawing.Color.LightSkyBlue;
-            this.guna2DateTimePicker2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DateTimePicker2.ForeColor = System.Drawing.Color.Black;
-            this.guna2DateTimePicker2.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.guna2DateTimePicker2.HoverState.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Location = new System.Drawing.Point(561, 382);
-            this.guna2DateTimePicker2.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.guna2DateTimePicker2.Name = "guna2DateTimePicker2";
-            this.guna2DateTimePicker2.ShadowDecoration.Parent = this.guna2DateTimePicker2;
-            this.guna2DateTimePicker2.Size = new System.Drawing.Size(309, 36);
-            this.guna2DateTimePicker2.TabIndex = 19;
-            this.guna2DateTimePicker2.Value = new System.DateTime(2021, 11, 22, 13, 32, 38, 709);
-            this.guna2DateTimePicker2.ValueChanged += new System.EventHandler(this.guna2DateTimePicker2_ValueChanged);
+            this.txtCheckin.CheckedState.FillColor = System.Drawing.Color.DeepSkyBlue;
+            this.txtCheckin.CheckedState.ForeColor = System.Drawing.Color.White;
+            this.txtCheckin.CheckedState.Parent = this.txtCheckin;
+            this.txtCheckin.FillColor = System.Drawing.Color.LightSkyBlue;
+            this.txtCheckin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCheckin.ForeColor = System.Drawing.Color.Black;
+            this.txtCheckin.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.txtCheckin.HoverState.Parent = this.txtCheckin;
+            this.txtCheckin.Location = new System.Drawing.Point(561, 384);
+            this.txtCheckin.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.txtCheckin.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
+            this.txtCheckin.Name = "txtCheckin";
+            this.txtCheckin.ShadowDecoration.Parent = this.txtCheckin;
+            this.txtCheckin.Size = new System.Drawing.Size(309, 36);
+            this.txtCheckin.TabIndex = 19;
+            this.txtCheckin.Value = new System.DateTime(2021, 11, 22, 13, 32, 38, 709);
+            this.txtCheckin.ValueChanged += new System.EventHandler(this.guna2DateTimePicker2_ValueChanged);
             // 
-            // guna2TextBox4
+            // txtPreco
             // 
-            this.guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox4.DefaultText = "";
-            this.guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.DisabledState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.FocusedState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox4.HoverState.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Location = new System.Drawing.Point(1002, 489);
-            this.guna2TextBox4.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox4.Name = "guna2TextBox4";
-            this.guna2TextBox4.PasswordChar = '\0';
-            this.guna2TextBox4.PlaceholderText = "";
-            this.guna2TextBox4.SelectedText = "";
-            this.guna2TextBox4.ShadowDecoration.Parent = this.guna2TextBox4;
-            this.guna2TextBox4.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox4.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox4.TabIndex = 18;
+            this.txtPreco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPreco.DefaultText = "";
+            this.txtPreco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPreco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPreco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPreco.DisabledState.Parent = this.txtPreco;
+            this.txtPreco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPreco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPreco.FocusedState.Parent = this.txtPreco;
+            this.txtPreco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtPreco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtPreco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPreco.HoverState.Parent = this.txtPreco;
+            this.txtPreco.Location = new System.Drawing.Point(1002, 489);
+            this.txtPreco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.PasswordChar = '\0';
+            this.txtPreco.PlaceholderText = "";
+            this.txtPreco.SelectedText = "";
+            this.txtPreco.ShadowDecoration.Parent = this.txtPreco;
+            this.txtPreco.Size = new System.Drawing.Size(309, 36);
+            this.txtPreco.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtPreco.TabIndex = 18;
             // 
-            // guna2TextBox5
+            // txtCpf
             // 
-            this.guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox5.DefaultText = "";
-            this.guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.DisabledState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.FocusedState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox5.HoverState.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Location = new System.Drawing.Point(561, 180);
-            this.guna2TextBox5.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox5.Name = "guna2TextBox5";
-            this.guna2TextBox5.PasswordChar = '\0';
-            this.guna2TextBox5.PlaceholderText = "Insira o CPF";
-            this.guna2TextBox5.SelectedText = "";
-            this.guna2TextBox5.ShadowDecoration.Parent = this.guna2TextBox5;
-            this.guna2TextBox5.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox5.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox5.TabIndex = 17;
+            this.txtCpf.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtCpf.DefaultText = "";
+            this.txtCpf.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtCpf.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtCpf.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCpf.DisabledState.Parent = this.txtCpf;
+            this.txtCpf.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtCpf.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCpf.FocusedState.Parent = this.txtCpf;
+            this.txtCpf.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtCpf.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCpf.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCpf.HoverState.Parent = this.txtCpf;
+            this.txtCpf.Location = new System.Drawing.Point(561, 180);
+            this.txtCpf.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtCpf.Name = "txtCpf";
+            this.txtCpf.PasswordChar = '\0';
+            this.txtCpf.PlaceholderText = "Insira o CPF";
+            this.txtCpf.SelectedText = "";
+            this.txtCpf.ShadowDecoration.Parent = this.txtCpf;
+            this.txtCpf.Size = new System.Drawing.Size(309, 36);
+            this.txtCpf.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtCpf.TabIndex = 17;
             // 
             // label7
             // 
@@ -346,55 +350,70 @@ namespace Hospedar.All_User_Control
             this.label9.Text = "CPF";
             this.label9.Click += new System.EventHandler(this.label9_Click);
             // 
-            // guna2ComboBox2
+            // txtCama
             // 
-            this.guna2ComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox2.FocusedState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2ComboBox2.HoverState.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.ItemHeight = 30;
-            this.guna2ComboBox2.ItemsAppearance.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Location = new System.Drawing.Point(1002, 178);
-            this.guna2ComboBox2.Name = "guna2ComboBox2";
-            this.guna2ComboBox2.ShadowDecoration.Parent = this.guna2ComboBox2;
-            this.guna2ComboBox2.Size = new System.Drawing.Size(309, 36);
-            this.guna2ComboBox2.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2ComboBox2.TabIndex = 21;
+            this.txtCama.BackColor = System.Drawing.Color.Transparent;
+            this.txtCama.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtCama.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtCama.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCama.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtCama.FocusedState.Parent = this.txtCama;
+            this.txtCama.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtCama.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtCama.HoverState.Parent = this.txtCama;
+            this.txtCama.ItemHeight = 30;
+            this.txtCama.Items.AddRange(new object[] {
+            "Solteiro",
+            "Casal Queen Size",
+            "Casal King Size",
+            "Dormitório"});
+            this.txtCama.ItemsAppearance.Parent = this.txtCama;
+            this.txtCama.Location = new System.Drawing.Point(1002, 180);
+            this.txtCama.Name = "txtCama";
+            this.txtCama.ShadowDecoration.Parent = this.txtCama;
+            this.txtCama.Size = new System.Drawing.Size(309, 36);
+            this.txtCama.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtCama.TabIndex = 21;
+            this.txtCama.SelectedIndexChanged += new System.EventHandler(this.txtCama_SelectedIndexChanged);
             // 
             // label10
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(998, 154);
+            this.label10.Location = new System.Drawing.Point(998, 156);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(121, 21);
             this.label10.TabIndex = 20;
             this.label10.Text = "Tipo de Cama";
             // 
-            // guna2ComboBox3
+            // txtTipoQuarto
             // 
-            this.guna2ComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox3.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox3.FocusedState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2ComboBox3.HoverState.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.ItemHeight = 30;
-            this.guna2ComboBox3.ItemsAppearance.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Location = new System.Drawing.Point(1002, 282);
-            this.guna2ComboBox3.Name = "guna2ComboBox3";
-            this.guna2ComboBox3.ShadowDecoration.Parent = this.guna2ComboBox3;
-            this.guna2ComboBox3.Size = new System.Drawing.Size(309, 36);
-            this.guna2ComboBox3.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2ComboBox3.TabIndex = 23;
+            this.txtTipoQuarto.BackColor = System.Drawing.Color.Transparent;
+            this.txtTipoQuarto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtTipoQuarto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtTipoQuarto.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTipoQuarto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtTipoQuarto.FocusedState.Parent = this.txtTipoQuarto;
+            this.txtTipoQuarto.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtTipoQuarto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtTipoQuarto.HoverState.Parent = this.txtTipoQuarto;
+            this.txtTipoQuarto.ItemHeight = 30;
+            this.txtTipoQuarto.Items.AddRange(new object[] {
+            "Quarto individual",
+            "Quarto duplo individual",
+            "Quarto twin ",
+            "Quarto de casal ",
+            "Quarto Triplo ",
+            "Quarto quádruplo ",
+            "Dormitório "});
+            this.txtTipoQuarto.ItemsAppearance.Parent = this.txtTipoQuarto;
+            this.txtTipoQuarto.Location = new System.Drawing.Point(1002, 282);
+            this.txtTipoQuarto.Name = "txtTipoQuarto";
+            this.txtTipoQuarto.ShadowDecoration.Parent = this.txtTipoQuarto;
+            this.txtTipoQuarto.Size = new System.Drawing.Size(309, 36);
+            this.txtTipoQuarto.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtTipoQuarto.TabIndex = 23;
+            this.txtTipoQuarto.SelectedIndexChanged += new System.EventHandler(this.txtTipoQuarto_SelectedIndexChanged);
             // 
             // label11
             // 
@@ -406,25 +425,26 @@ namespace Hospedar.All_User_Control
             this.label11.TabIndex = 22;
             this.label11.Text = "Tipo de Quarto";
             // 
-            // guna2ComboBox4
+            // txtNumeroQuarto
             // 
-            this.guna2ComboBox4.BackColor = System.Drawing.Color.Transparent;
-            this.guna2ComboBox4.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.guna2ComboBox4.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.guna2ComboBox4.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2ComboBox4.FocusedState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2ComboBox4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2ComboBox4.HoverState.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.ItemHeight = 30;
-            this.guna2ComboBox4.ItemsAppearance.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Location = new System.Drawing.Point(1002, 384);
-            this.guna2ComboBox4.Name = "guna2ComboBox4";
-            this.guna2ComboBox4.ShadowDecoration.Parent = this.guna2ComboBox4;
-            this.guna2ComboBox4.Size = new System.Drawing.Size(309, 36);
-            this.guna2ComboBox4.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2ComboBox4.TabIndex = 25;
+            this.txtNumeroQuarto.BackColor = System.Drawing.Color.Transparent;
+            this.txtNumeroQuarto.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.txtNumeroQuarto.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.txtNumeroQuarto.FocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumeroQuarto.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtNumeroQuarto.FocusedState.Parent = this.txtNumeroQuarto;
+            this.txtNumeroQuarto.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+            this.txtNumeroQuarto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtNumeroQuarto.HoverState.Parent = this.txtNumeroQuarto;
+            this.txtNumeroQuarto.ItemHeight = 30;
+            this.txtNumeroQuarto.ItemsAppearance.Parent = this.txtNumeroQuarto;
+            this.txtNumeroQuarto.Location = new System.Drawing.Point(1002, 384);
+            this.txtNumeroQuarto.Name = "txtNumeroQuarto";
+            this.txtNumeroQuarto.ShadowDecoration.Parent = this.txtNumeroQuarto;
+            this.txtNumeroQuarto.Size = new System.Drawing.Size(309, 36);
+            this.txtNumeroQuarto.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtNumeroQuarto.TabIndex = 25;
+            this.txtNumeroQuarto.SelectedIndexChanged += new System.EventHandler(this.txtNumeroQuarto_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -456,33 +476,34 @@ namespace Hospedar.All_User_Control
             this.btnAddHospede.ShadowDecoration.Parent = this.btnAddHospede;
             this.btnAddHospede.Size = new System.Drawing.Size(193, 45);
             this.btnAddHospede.TabIndex = 26;
-            this.btnAddHospede.Text = "Alocar Quarto";
+            this.btnAddHospede.Text = "Reservar Quarto";
+            this.btnAddHospede.Click += new System.EventHandler(this.btnAddHospede_Click);
             // 
-            // guna2TextBox6
+            // txtEndereco
             // 
-            this.guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox6.DefaultText = "";
-            this.guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.DisabledState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.FocusedState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox6.HoverState.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Location = new System.Drawing.Point(561, 282);
-            this.guna2TextBox6.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.guna2TextBox6.Name = "guna2TextBox6";
-            this.guna2TextBox6.PasswordChar = '\0';
-            this.guna2TextBox6.PlaceholderText = "Insira o Endereço Completo";
-            this.guna2TextBox6.SelectedText = "";
-            this.guna2TextBox6.ShadowDecoration.Parent = this.guna2TextBox6;
-            this.guna2TextBox6.Size = new System.Drawing.Size(309, 36);
-            this.guna2TextBox6.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
-            this.guna2TextBox6.TabIndex = 28;
+            this.txtEndereco.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtEndereco.DefaultText = "";
+            this.txtEndereco.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtEndereco.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtEndereco.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEndereco.DisabledState.Parent = this.txtEndereco;
+            this.txtEndereco.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtEndereco.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEndereco.FocusedState.Parent = this.txtEndereco;
+            this.txtEndereco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEndereco.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.txtEndereco.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtEndereco.HoverState.Parent = this.txtEndereco;
+            this.txtEndereco.Location = new System.Drawing.Point(561, 282);
+            this.txtEndereco.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.PasswordChar = '\0';
+            this.txtEndereco.PlaceholderText = "Insira o Endereço Completo";
+            this.txtEndereco.SelectedText = "";
+            this.txtEndereco.ShadowDecoration.Parent = this.txtEndereco;
+            this.txtEndereco.Size = new System.Drawing.Size(309, 36);
+            this.txtEndereco.Style = Guna.UI2.WinForms.Enums.TextBoxStyle.Material;
+            this.txtEndereco.TabIndex = 28;
             // 
             // label13
             // 
@@ -499,26 +520,26 @@ namespace Hospedar.All_User_Control
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.guna2TextBox6);
+            this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.btnAddHospede);
-            this.Controls.Add(this.guna2ComboBox4);
+            this.Controls.Add(this.txtNumeroQuarto);
             this.Controls.Add(this.label12);
-            this.Controls.Add(this.guna2ComboBox3);
+            this.Controls.Add(this.txtTipoQuarto);
             this.Controls.Add(this.label11);
-            this.Controls.Add(this.guna2ComboBox2);
+            this.Controls.Add(this.txtCama);
             this.Controls.Add(this.label10);
-            this.Controls.Add(this.guna2DateTimePicker2);
-            this.Controls.Add(this.guna2TextBox4);
-            this.Controls.Add(this.guna2TextBox5);
+            this.Controls.Add(this.txtCheckin);
+            this.Controls.Add(this.txtPreco);
+            this.Controls.Add(this.txtCpf);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.guna2DateTimePicker1);
-            this.Controls.Add(this.guna2ComboBox1);
-            this.Controls.Add(this.guna2TextBox3);
-            this.Controls.Add(this.guna2TextBox2);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtDtNascimento);
+            this.Controls.Add(this.txtGenero);
+            this.Controls.Add(this.txtNacionalidade);
+            this.Controls.Add(this.txtTelefone);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -527,7 +548,6 @@ namespace Hospedar.All_User_Control
             this.Controls.Add(this.label1);
             this.Name = "UC_RegistroHospede";
             this.Size = new System.Drawing.Size(1407, 714);
-            this.Load += new System.EventHandler(this.UC_RegistroHospede_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -542,25 +562,25 @@ namespace Hospedar.All_User_Control
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker1;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox1;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox3;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
-        private Guna.UI2.WinForms.Guna2DateTimePicker guna2DateTimePicker2;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox4;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox5;
+        private Guna.UI2.WinForms.Guna2TextBox txtNome;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtDtNascimento;
+        private Guna.UI2.WinForms.Guna2ComboBox txtGenero;
+        private Guna.UI2.WinForms.Guna2TextBox txtNacionalidade;
+        private Guna.UI2.WinForms.Guna2TextBox txtTelefone;
+        private Guna.UI2.WinForms.Guna2DateTimePicker txtCheckin;
+        private Guna.UI2.WinForms.Guna2TextBox txtPreco;
+        private Guna.UI2.WinForms.Guna2TextBox txtCpf;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label9;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox4;
+        private Guna.UI2.WinForms.Guna2ComboBox txtNumeroQuarto;
         private System.Windows.Forms.Label label12;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox3;
+        private Guna.UI2.WinForms.Guna2ComboBox txtTipoQuarto;
         private System.Windows.Forms.Label label11;
-        private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
+        private Guna.UI2.WinForms.Guna2ComboBox txtCama;
         private System.Windows.Forms.Label label10;
         private Guna.UI2.WinForms.Guna2Button btnAddHospede;
-        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox6;
+        private Guna.UI2.WinForms.Guna2TextBox txtEndereco;
         private System.Windows.Forms.Label label13;
     }
 }
