@@ -26,7 +26,31 @@ namespace Hospedar.All_User_Control
 
         private void guna2Button1_Click(object sender, EventArgs e)
         {
+            if (txtNumeroQuarto.Text != "" && txtTipoQuarto.Text != "" && txtTipoCama.Text != "" && txtPrecoQuarto.Text != "")
+            {
+                String quartono = txtNumeroQuarto.Text;
+                String tipoquarto = txtTipoQuarto.Text;
+                String tipocama = txtTipoCama.Text;
+                Int64 precoquarto = Int64.Parse(txtPrecoQuarto.Text);
 
+                query = "insert into quartos (quartoNo,quartoTipo,cama,preco) values ('"+quartono+ "','" +tipoquarto+"','"+tipocama+"',"+precoquarto+")";
+                fn.setData(query, "Quarto Adicionado");
+
+                UC_AddQuarto_Load(this, null);
+                clearAll();
+            }
+            else
+            {
+                MessageBox.Show("Preencha Todos os Campos.", "ATENÇÃO!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
+
+        public void clearAll()
+        {
+            txtNumeroQuarto.Clear();
+            txtTipoQuarto.SelectedIndex = -1;
+            txtTipoCama.SelectedIndex = -1;
+            txtPrecoQuarto.Clear();
         }
 
         private void UC_AddQuarto_Load(object sender, EventArgs e)

@@ -30,7 +30,7 @@ namespace Hospedar
             return ds;
         }
 
-        public void setData(String query, string message) // Inserção, deleção e atualização na base
+        public void setData(String query, String message) // Inserção, deleção e atualização na base
         {
             SqlConnection con = getConnection();
             SqlCommand cmd = new SqlCommand();
@@ -40,7 +40,7 @@ namespace Hospedar
             cmd.ExecuteNonQuery();
             con.Close();
 
-            MessageBox.Show("'" + message + "'", "Operação efetuada com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            MessageBox.Show("'"+message+"'", "Operação efetuada com sucesso", MessageBoxButtons.OK, MessageBoxIcon.Information);
         }
 
 
