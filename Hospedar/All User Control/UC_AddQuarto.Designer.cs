@@ -308,6 +308,8 @@ namespace Hospedar.All_User_Control
             this.Name = "UC_AddQuarto";
             this.Size = new System.Drawing.Size(1407, 714);
             this.Load += new System.EventHandler(this.UC_AddQuarto_Load);
+            this.Enter += new System.EventHandler(this.UC_AddQuarto_Enter);
+            this.Leave += new System.EventHandler(this.UC_AddQuarto_Leave);
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

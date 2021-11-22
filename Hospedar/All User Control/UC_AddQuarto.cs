@@ -59,5 +59,15 @@ namespace Hospedar.All_User_Control
             DataSet ds = fn.getData(query);
             guna2DataGridView1.DataSource = ds.Tables[0];
         }
+
+        private void UC_AddQuarto_Leave(object sender, EventArgs e)
+        {
+            clearAll();
+        }
+
+        private void UC_AddQuarto_Enter(object sender, EventArgs e)
+        {
+            UC_AddQuarto_Load(this, null);
+        }
     }
 }

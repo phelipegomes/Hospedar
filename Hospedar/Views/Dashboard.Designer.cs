@@ -38,10 +38,12 @@ namespace Hospedar.Views
             this.btnNovoHospede = new Guna.UI2.WinForms.Guna2Button();
             this.btnReservarQuarto = new Guna.UI2.WinForms.Guna2Button();
             this.panelX = new System.Windows.Forms.Panel();
+            this.uC_RegistroHospede1 = new All_User_Control.UC_RegistroHospede();
             this.uC_AddQuarto2 = new All_User_Control.UC_AddQuarto();
             this.btnSair = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
+            this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panelX.SuspendLayout();
             this.SuspendLayout();
@@ -212,12 +214,21 @@ namespace Hospedar.Views
             this.panelX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelX.Controls.Add(this.uC_RegistroHospede1);
             this.panelX.Controls.Add(this.uC_AddQuarto2);
             this.panelX.Location = new System.Drawing.Point(12, 161);
             this.panelX.Margin = new System.Windows.Forms.Padding(4);
             this.panelX.Name = "panelX";
             this.panelX.Size = new System.Drawing.Size(1302, 505);
             this.panelX.TabIndex = 1;
+            // 
+            // uC_RegistroHospede1
+            // 
+            this.uC_RegistroHospede1.BackColor = System.Drawing.Color.White;
+            this.uC_RegistroHospede1.Location = new System.Drawing.Point(3, 3);
+            this.uC_RegistroHospede1.Name = "uC_RegistroHospede1";
+            this.uC_RegistroHospede1.Size = new System.Drawing.Size(1407, 714);
+            this.uC_RegistroHospede1.TabIndex = 1;
             // 
             // uC_AddQuarto2
             // 
@@ -226,6 +237,7 @@ namespace Hospedar.Views
             this.uC_AddQuarto2.Name = "uC_AddQuarto2";
             this.uC_AddQuarto2.Size = new System.Drawing.Size(1407, 714);
             this.uC_AddQuarto2.TabIndex = 0;
+            this.uC_AddQuarto2.Load += new System.EventHandler(this.uC_AddQuarto2_Load);
             // 
             // btnSair
             // 
@@ -272,6 +284,11 @@ namespace Hospedar.Views
             this.guna2Elipse1.BorderRadius = 30;
             this.guna2Elipse1.TargetControl = this.panelX;
             // 
+            // guna2Elipse2
+            // 
+            this.guna2Elipse2.BorderRadius = 30;
+            this.guna2Elipse2.TargetControl = this;
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -307,5 +324,7 @@ namespace Hospedar.Views
         private Guna.UI2.WinForms.Guna2Button btnNovoHospede;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse1;
         private All_User_Control.UC_AddQuarto uC_AddQuarto2;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse2;
+        private All_User_Control.UC_RegistroHospede uC_RegistroHospede1;
     }
 }

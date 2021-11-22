@@ -24,6 +24,8 @@ namespace Hospedar.Views
 
         private void guna2Button2_Click(object sender, EventArgs e)
         {
+            uC_RegistroHospede1.Visible = true;
+            uC_RegistroHospede1.BringToFront();
         }
 
         private void btnMinimizar_Click(object sender, EventArgs e)
@@ -46,7 +48,13 @@ namespace Hospedar.Views
         private void Dashboard_Load(object sender, EventArgs e)
         {
             uC_AddQuarto2.Visible = false;
+            uC_RegistroHospede1.Visible = false;
             btnReservarQuarto.PerformClick();
+        }
+
+        private void uC_AddQuarto2_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
