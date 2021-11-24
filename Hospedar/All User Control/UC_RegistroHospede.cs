@@ -58,6 +58,7 @@ namespace Hospedar.All_User_Control
         private void txtTipoQuarto_SelectedIndexChanged(object sender, EventArgs e)
         {
             txtNumeroQuarto.Items.Clear();
+            txtPreco.Clear();
             query = "select quartoNo from quartos where cama = '"+txtCama.Text+"' and quartoTipo= '"+txtTipoQuarto.Text+"' and reservado = 'NAO'";
             setComboBox(query, txtNumeroQuarto);
         }
@@ -66,7 +67,7 @@ namespace Hospedar.All_User_Control
         {
             txtTipoQuarto.SelectedIndex = -1 ;
             txtNumeroQuarto.Items.Clear();
-            txtPreco.Text = "";
+            txtPreco.Clear();
         }
 
         int quartoid;
@@ -94,12 +95,34 @@ namespace Hospedar.All_User_Control
 
                 query = "insert into Hospedes (hnome,telefone,nacionalidade,genero,dtnascimento,cpf,endereco,checkin,quartoid) values('"+nome+"',"+tel+",'"+nacionalidade+"', '"+genero+"','"+dtnascimento+"','"+cpf+"','"+endereco+"','"+checkin+"',"+quartoid+") update quartos set reservado = 'SIM' where quartoNo = '"+txtNumeroQuarto.Text+"'";
                 fn.setData(query, "Quarto Nº " + txtNumeroQuarto.Text + " Reservado com Sucesso");
+                clearAll();
 
             }
             else
             {
                 MessageBox.Show("Preencha Todos os Campos","Informação", MessageBoxButtons.OK,MessageBoxIcon.Information);
             }
+        }
+
+        public void clearAll()
+        {
+            txtNome.Clear();
+            txtTelefone.Clear();
+            txtNacionalidade.Clear();
+            txtGenero.SelectedIndex = -1;
+            txtDtNascimento.ResetText();
+            txtCpf.Clear();
+            txtEndereco.Clear();
+            txtCheckin.ResetText();
+            txtCama.SelectedIndex = -1;
+            txtTipoQuarto.SelectedIndex = -1;
+            txtNumeroQuarto.Items.Clear();
+            txtPreco.Clear();
+        }
+
+        private void UC_RegistroHospede_Leave(object sender, EventArgs e)
+        {
+            clearAll();
         }
     }
 }

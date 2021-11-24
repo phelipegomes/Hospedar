@@ -80,9 +80,9 @@ namespace Hospedar.All_User_Control
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(99, 154);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(158, 21);
+            this.label2.Size = new System.Drawing.Size(155, 21);
             this.label2.TabIndex = 3;
-            this.label2.Text = "Número do Quarto";
+            this.label2.Text = "Nome do Hospede";
             // 
             // label3
             // 
@@ -548,6 +548,7 @@ namespace Hospedar.All_User_Control
             this.Controls.Add(this.label1);
             this.Name = "UC_RegistroHospede";
             this.Size = new System.Drawing.Size(1407, 714);
+            this.Leave += new System.EventHandler(this.UC_RegistroHospede_Leave);
             this.ResumeLayout(false);
             this.PerformLayout();
 

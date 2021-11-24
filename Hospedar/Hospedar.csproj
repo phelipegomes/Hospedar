@@ -58,6 +58,12 @@
     <Compile Include="All User Control\UC_AddQuarto.Designer.cs">
       <DependentUpon>UC_AddQuarto.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_CheckoutHospede.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_CheckoutHospede.Designer.cs">
+      <DependentUpon>UC_CheckoutHospede.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_RegistroHospede.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -84,6 +90,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="All User Control\UC_AddQuarto.resx">
       <DependentUpon>UC_AddQuarto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_CheckoutHospede.resx">
+      <DependentUpon>UC_CheckoutHospede.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_RegistroHospede.resx">
       <DependentUpon>UC_RegistroHospede.cs</DependentUpon>
