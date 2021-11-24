@@ -64,6 +64,12 @@
     <Compile Include="All User Control\UC_CheckoutHospede.Designer.cs">
       <DependentUpon>UC_CheckoutHospede.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_DetalhesHospedes.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_DetalhesHospedes.Designer.cs">
+      <DependentUpon>UC_DetalhesHospedes.cs</DependentUpon>
+    </Compile>
     <Compile Include="All User Control\UC_RegistroHospede.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -93,6 +99,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_CheckoutHospede.resx">
       <DependentUpon>UC_CheckoutHospede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_DetalhesHospedes.resx">
+      <DependentUpon>UC_DetalhesHospedes.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_RegistroHospede.resx">
       <DependentUpon>UC_RegistroHospede.cs</DependentUpon>

@@ -38,14 +38,16 @@ namespace Hospedar.Views
             this.btnNovoHospede = new Guna.UI2.WinForms.Guna2Button();
             this.btnReservarQuarto = new Guna.UI2.WinForms.Guna2Button();
             this.panelX = new System.Windows.Forms.Panel();
+            this.uC_DetalhesHospedes1 = new All_User_Control.UC_DetalhesHospedes();
+            this.uC_CheckoutHospede1 = new All_User_Control.UC_CheckoutHospede();
+            this.uC_RegistroHospede1 = new All_User_Control.UC_RegistroHospede();
+            this.uC_AddQuarto2 = new All_User_Control.UC_AddQuarto();
             this.btnSair = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnMinimizar = new Guna.UI2.WinForms.Guna2CircleButton();
             this.guna2Elipse1 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse2 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.guna2Elipse3 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
-            this.uC_RegistroHospede1 = new All_User_Control.UC_RegistroHospede();
-            this.uC_AddQuarto2 = new All_User_Control.UC_AddQuarto();
-            this.uC_CheckoutHospede1 = new All_User_Control.UC_CheckoutHospede();
+            this.guna2Elipse4 = new Guna.UI2.WinForms.Guna2Elipse(this.components);
             this.panel1.SuspendLayout();
             this.panelX.SuspendLayout();
             this.SuspendLayout();
@@ -120,6 +122,7 @@ namespace Hospedar.Views
             this.btnHospedes.Size = new System.Drawing.Size(210, 108);
             this.btnHospedes.TabIndex = 8;
             this.btnHospedes.Text = "Hospedes";
+            this.btnHospedes.Click += new System.EventHandler(this.btnHospedes_Click);
             // 
             // btnCheckOut
             // 
@@ -217,6 +220,7 @@ namespace Hospedar.Views
             this.panelX.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelX.Controls.Add(this.uC_DetalhesHospedes1);
             this.panelX.Controls.Add(this.uC_CheckoutHospede1);
             this.panelX.Controls.Add(this.uC_RegistroHospede1);
             this.panelX.Controls.Add(this.uC_AddQuarto2);
@@ -225,6 +229,39 @@ namespace Hospedar.Views
             this.panelX.Name = "panelX";
             this.panelX.Size = new System.Drawing.Size(1302, 505);
             this.panelX.TabIndex = 1;
+            // 
+            // uC_DetalhesHospedes1
+            // 
+            this.uC_DetalhesHospedes1.BackColor = System.Drawing.Color.White;
+            this.uC_DetalhesHospedes1.Location = new System.Drawing.Point(3, 3);
+            this.uC_DetalhesHospedes1.Name = "uC_DetalhesHospedes1";
+            this.uC_DetalhesHospedes1.Size = new System.Drawing.Size(1407, 714);
+            this.uC_DetalhesHospedes1.TabIndex = 3;
+            // 
+            // uC_CheckoutHospede1
+            // 
+            this.uC_CheckoutHospede1.BackColor = System.Drawing.Color.White;
+            this.uC_CheckoutHospede1.Location = new System.Drawing.Point(3, 3);
+            this.uC_CheckoutHospede1.Name = "uC_CheckoutHospede1";
+            this.uC_CheckoutHospede1.Size = new System.Drawing.Size(1407, 714);
+            this.uC_CheckoutHospede1.TabIndex = 2;
+            // 
+            // uC_RegistroHospede1
+            // 
+            this.uC_RegistroHospede1.BackColor = System.Drawing.Color.White;
+            this.uC_RegistroHospede1.Location = new System.Drawing.Point(3, 3);
+            this.uC_RegistroHospede1.Name = "uC_RegistroHospede1";
+            this.uC_RegistroHospede1.Size = new System.Drawing.Size(1407, 714);
+            this.uC_RegistroHospede1.TabIndex = 1;
+            // 
+            // uC_AddQuarto2
+            // 
+            this.uC_AddQuarto2.BackColor = System.Drawing.Color.White;
+            this.uC_AddQuarto2.Location = new System.Drawing.Point(3, 3);
+            this.uC_AddQuarto2.Name = "uC_AddQuarto2";
+            this.uC_AddQuarto2.Size = new System.Drawing.Size(1407, 714);
+            this.uC_AddQuarto2.TabIndex = 0;
+            this.uC_AddQuarto2.Load += new System.EventHandler(this.uC_AddQuarto2_Load);
             // 
             // btnSair
             // 
@@ -281,30 +318,10 @@ namespace Hospedar.Views
             this.guna2Elipse3.BorderRadius = 30;
             this.guna2Elipse3.TargetControl = this;
             // 
-            // uC_RegistroHospede1
+            // guna2Elipse4
             // 
-            this.uC_RegistroHospede1.BackColor = System.Drawing.Color.White;
-            this.uC_RegistroHospede1.Location = new System.Drawing.Point(3, 3);
-            this.uC_RegistroHospede1.Name = "uC_RegistroHospede1";
-            this.uC_RegistroHospede1.Size = new System.Drawing.Size(1407, 714);
-            this.uC_RegistroHospede1.TabIndex = 1;
-            // 
-            // uC_AddQuarto2
-            // 
-            this.uC_AddQuarto2.BackColor = System.Drawing.Color.White;
-            this.uC_AddQuarto2.Location = new System.Drawing.Point(3, 3);
-            this.uC_AddQuarto2.Name = "uC_AddQuarto2";
-            this.uC_AddQuarto2.Size = new System.Drawing.Size(1407, 714);
-            this.uC_AddQuarto2.TabIndex = 0;
-            this.uC_AddQuarto2.Load += new System.EventHandler(this.uC_AddQuarto2_Load);
-            // 
-            // uC_CheckoutHospede1
-            // 
-            this.uC_CheckoutHospede1.BackColor = System.Drawing.Color.White;
-            this.uC_CheckoutHospede1.Location = new System.Drawing.Point(3, 3);
-            this.uC_CheckoutHospede1.Name = "uC_CheckoutHospede1";
-            this.uC_CheckoutHospede1.Size = new System.Drawing.Size(1407, 714);
-            this.uC_CheckoutHospede1.TabIndex = 2;
+            this.guna2Elipse4.BorderRadius = 30;
+            this.guna2Elipse4.TargetControl = this;
             // 
             // Dashboard
             // 
@@ -345,5 +362,7 @@ namespace Hospedar.Views
         private All_User_Control.UC_RegistroHospede uC_RegistroHospede1;
         private Guna.UI2.WinForms.Guna2Elipse guna2Elipse3;
         private All_User_Control.UC_CheckoutHospede uC_CheckoutHospede1;
+        private Guna.UI2.WinForms.Guna2Elipse guna2Elipse4;
+        private All_User_Control.UC_DetalhesHospedes uC_DetalhesHospedes1;
     }
 }

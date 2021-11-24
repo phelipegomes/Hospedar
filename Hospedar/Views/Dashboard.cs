@@ -63,5 +63,11 @@ namespace Hospedar.Views
             uC_CheckoutHospede1.BringToFront();
 
         }
+
+        private void btnHospedes_Click(object sender, EventArgs e)
+        {
+            uC_DetalhesHospedes1.Visible = true;
+            uC_DetalhesHospedes1.BringToFront();
+        }
     }
 }
