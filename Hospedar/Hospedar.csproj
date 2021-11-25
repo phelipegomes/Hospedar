@@ -76,6 +76,12 @@
     <Compile Include="All User Control\UC_RegistroHospede.Designer.cs">
       <DependentUpon>UC_RegistroHospede.cs</DependentUpon>
     </Compile>
+    <Compile Include="All User Control\UC_Usuarios.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="All User Control\UC_Usuarios.Designer.cs">
+      <DependentUpon>UC_Usuarios.cs</DependentUpon>
+    </Compile>
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="function.cs" />
     <Compile Include="Models\Controle.cs" />
@@ -105,6 +111,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="All User Control\UC_RegistroHospede.resx">
       <DependentUpon>UC_RegistroHospede.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="All User Control\UC_Usuarios.resx">
+      <DependentUpon>UC_Usuarios.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\Dashboard.resx">
       <DependentUpon>Dashboard.cs</DependentUpon>
