@@ -47,6 +47,7 @@ namespace Hospedar.Views
 
         private void Dashboard_Load(object sender, EventArgs e)
         {
+            uC_Usuarios1.Visible = false;
             uC_AddQuarto2.Visible = false;
             uC_RegistroHospede1.Visible = false;
             btnReservarQuarto.PerformClick();
@@ -68,6 +69,12 @@ namespace Hospedar.Views
         {
             uC_DetalhesHospedes1.Visible = true;
             uC_DetalhesHospedes1.BringToFront();
+        }
+
+        private void btnUsuarios_Click(object sender, EventArgs e)
+        {
+            uC_Usuarios1.Visible = true;
+            uC_Usuarios1.BringToFront();
         }
     }
 }

@@ -216,7 +216,7 @@ namespace Hospedar.All_User_Control
             this.txtGenero.HoverState.Parent = this.txtGenero;
             this.txtGenero.ItemHeight = 30;
             this.txtGenero.Items.AddRange(new object[] {
-            "Homen",
+            "Homem",
             "Mulher",
             "Outro"});
             this.txtGenero.ItemsAppearance.Parent = this.txtGenero;

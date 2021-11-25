@@ -84,7 +84,6 @@
     </Compile>
     <Compile Include="DAL\LoginDaoComandos.cs" />
     <Compile Include="function.cs" />
-    <Compile Include="Models\Controle.cs" />
     <Compile Include="Views\Dashboard.cs">
       <SubType>Form</SubType>
     </Compile>

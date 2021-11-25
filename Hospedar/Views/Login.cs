@@ -1,5 +1,4 @@
-﻿using Hospedar.Models;
-using Hospedar.Views;
+﻿using Hospedar.Views;
 using Hospedar.All_User_Control;
 using System;
 using System.Collections.Generic;
@@ -15,6 +14,10 @@ namespace Hospedar
 {
         public partial class Hospedar : Form
         {
+
+        function fn = new function();
+        String query;
+
             public Hospedar()
             {
                 InitializeComponent();
@@ -40,34 +43,24 @@ namespace Hospedar
                 Application.Exit();
             }
 
-            private void btnEntrar_Click(object sender, EventArgs e)
-            {              
-                
-                Controle controle = new Controle();
-                controle.acessar(txbUsuario.Text, txbSenha.Text);
-                if (controle.message.Equals(""))
-                {
-                    if (controle.has)
-                    {
-                        labelError.Visible = false;
-                        MessageBox.Show("Logado com sucesso", "Entrando", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                        Dashboard ds = new Dashboard();
-                        this.Hide();
-                        ds.Show();
-                    }
+        private void btnEntrar_Click(object sender, EventArgs e)
+        {
+            query = "select usuario, senha from usuarios where usuario = '" + txbUsuario.Text + "' and senha = '" + txbSenha.Text + "'";
+            DataSet ds = fn.getData(query);
 
-                    else
-                    {
-                        labelError.Visible = true;
-                        txbSenha.Clear();
-                    }
-                }
-
-                else
-                {
-                    MessageBox.Show(controle.message);
-                }
+            if (ds.Tables[0].Rows.Count != 0)
+            {
+                labelError.Visible = false;
+                Dashboard dash = new Dashboard();
+                this.Hide();
+                dash.Show();
             }
+            else
+            {
+                labelError.Visible = true;
+                txbSenha.Clear();
+            }
+        }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
